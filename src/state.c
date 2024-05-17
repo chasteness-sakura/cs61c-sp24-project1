@@ -24,7 +24,9 @@ static void update_head(game_state_t *state, unsigned int snum);
 /* Task 1 */
 game_state_t *create_default_state() {
   // TODO: Implement this function.
-  return NULL;
+  game_state_t * state = malloc(sizeof(game_state_t));
+  state->num_row = 18;
+  return state;
 }
 
 /* Task 2 */
